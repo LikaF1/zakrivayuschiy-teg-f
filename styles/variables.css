@@ -1,15 +1,15 @@
 
 :root{
-    --Inter-font:Inter-Variable, sans-serif;
-    --Press-font:PressStart2P, monospace;
-    --title-weight:700;
-    --text-weight:400;
-    --accent-color:black;
-    --bg-color:white;
+    --Inter-font: Inter-Variable, sans-serif;
+    --Press-font: PressStart2P, monospace;
+    --title-weight: 700;
+    --text-weight: 400;
+    --accent-color: black;
+    --bg-color: white;
     --theme-background: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    --label-border:white;
-    --contour-color:#000000;    
+    --label-border: white;
+    --contour-color: #000000;    
     --active-color: #FF0000;
 }

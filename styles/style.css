@@ -178,22 +178,15 @@
 
 .button__text {
   position: relative;
-  z-index: 1;
-  color: white;
-  mix-blend-mode: difference;
-  color: var(--accent-color);
-}
-
-.button__text {
-  position: relative;
   mix-blend-mode: difference;
   animation: btnText 4s ease-in-out infinite alternate;
+  z-index: 1;
+  color: var(--accent-color);
 
 }
 
 .card__icon-button {
   background-color: transparent;
-  border: none;
   transition: border 0.3s ease;
   border: 2px solid transparent;
 }

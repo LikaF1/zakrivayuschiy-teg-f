@@ -82,7 +82,7 @@
   background-color: var(--bg-color);
   font-family: var(--Inter-font);
   font-style: normal;
-  font-weight: var(--text-weight);
+  font-variation-settings: 'wght' var(--text-weight),'opsz' 0;
   font-size: 18px;
   line-height: 21px;
   color: var(--accent-color);

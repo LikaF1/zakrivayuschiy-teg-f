@@ -5,13 +5,14 @@
   background-image: var(--theme-background);
   background-size: cover;
   font-family: var(--Inter-font);
-  font-weight: var(--text-weight);
+    font-variation-settings: "wght" var(--text-weight);
+  color: var(--accent-color);
   background-attachment: fixed;
 }
 
 .header {
   max-width: 700px;
-  min-height: 368px;
+  /* min-height: 368px; */
   background: var(--bg-color);
   border: 2px solid var(--accent-color);
   display: flex;
@@ -32,6 +33,7 @@
   font-style: normal;
   font-size: 65px;
   line-height: 65px;
+  margin-block-start: 136px;
 }
 
 .title-description {
@@ -77,8 +79,8 @@
 
 .memory {
   border: 2px solid var(--accent-color);
-  min-height: 959px;
   max-width: 696px;
+  width: 100%;
   background-color: var(--bg-color);
   font-family: var(--Inter-font);
   font-style: normal;
@@ -89,7 +91,7 @@
 }
 
 .section-title {
-  font-weight: var((--title-weight));
+  font-variation-settings: "wght" var(--title-weight);
   font-size: 18px;
   line-height: 22px;
   margin: 4px 9px;
@@ -167,6 +169,8 @@
   border: 2px solid var(--accent-color);
 }
 
+
+
 .card__like-button {
   width: 130px;
   height: 38px;
@@ -179,20 +183,17 @@
 .button__text {
   position: relative;
   mix-blend-mode: difference;
-  animation: btnText 4s ease-in-out infinite alternate;
   z-index: 1;
-  color: var(--accent-color);
-
 }
 
 .card__icon-button {
   background-color: transparent;
-  transition: border 0.3s ease;
+  transition: border 0.3s linear;
   border: 2px solid transparent;
 }
 
 .like-icon {
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .sparks {
@@ -203,7 +204,7 @@
   text-transform: lowercase;
 }
 
-.footer {
+.save_block {
   display: flex;
   justify-content: center;
   margin-block: 49px;
@@ -230,7 +231,7 @@
   left: 5%;
   top: 5%;
   width: 359px;
-  height: 193px;
+  /* height: 193px; */
   padding: 30px;
   background-color: var(--bg-color);
   justify-content: center;
@@ -255,11 +256,13 @@ dialog[open] .dialog_text {
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgb(0 0 0);
+opacity: 0.75;
 }
 
 dialog::-webkit-backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgb(0 0 0);
+opacity: 0.75;
 }
 
 .close_btn {
@@ -318,7 +321,7 @@ dialog::-webkit-backdrop {
 @media (width <=375px) {
   .header {
     width: 100%;
-    min-height: 327px;
+    /* min-height: 327px; */
     padding: 120px 14px 25px 14px;
   }
 
@@ -343,7 +346,7 @@ dialog::-webkit-backdrop {
   }
 
   .memory {
-    min-height: 329px;
+    /* min-height: 329px; */
     width: 100%;
   }
 
@@ -361,7 +364,7 @@ dialog::-webkit-backdrop {
     margin-block-start: 25px;
   }
 
-  .footer {
+  .save_block {
     margin-block: 49px 0 0 0;
   }
 
@@ -377,7 +380,7 @@ dialog::-webkit-backdrop {
 
   .dialog {
     width: 341px;
-    height: 193px;
+    /* height: 193px; */
     padding: 30px 37px;
   }
 

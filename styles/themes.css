@@ -17,7 +17,7 @@
     --label-border: white;
     --contour-color: #000000; 
 }
-
+    
 :root.theme-dark {
     --Inter-font: Inter-Variable;
     --Press-font: PressStart2P;

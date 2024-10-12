@@ -11,6 +11,7 @@
     --text-weight: 400;
     --accent-color: black;
     --bg-color: white;
+    --alternative-color:black;
     --theme-background: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
@@ -24,6 +25,7 @@
     --title-weight: 785;
     --text-weight: 465;
     --accent-color: #00CC14;
+    --alternative-color:#00CC14;
     --bg-color:black;
     --theme-background: repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
     repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), 
@@ -39,6 +41,7 @@
             --title-weight: 785;
             --text-weight: 465;
             --accent-color: #00CC14;
+            --alternative-color:#00CC14;
             --bg-color: black;
             --theme-background: repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
             repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), 

@@ -172,8 +172,7 @@
   line-height: 90%;
   color: var(--accent-color);
   background-color: transparent;
-  transition: opacity 0.3s ease;
-  transition: box-shadow 0.3s ease;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid var(--accent-color);
   overflow: hidden;
   position: relative;
@@ -191,8 +190,7 @@
 .button__text {
   position: relative;
   z-index: 1;
-  transition: z-index 1s ease;
-  transition: color 2s ease;
+  transition: z-index 1s ease, color 2s ease;
 }
 
 .card__icon-button {
@@ -335,7 +333,6 @@ dialog::-webkit-backdrop {
 
   .header {
     width: 100%;
-    width: 100vw;
     padding: 120px 14px 25px 14px;
     margin-inline: 0;
   }

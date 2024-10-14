@@ -4,13 +4,10 @@
   background-color: var(--bg-color);
   background-image: var(--theme-background);
   background-size: cover;
-  font-family: var(--Inter-font);
+  font-family: var(--Inter-font), sans-serif;
   font-variation-settings: "wght" var(--text-weight);
   color: var(--accent-color);
   background-attachment: fixed;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   margin: 0 auto;
 }
 
@@ -171,7 +168,7 @@
   font-size: 14px;
   line-height: 90%;
   color: var(--accent-color);
-  background-color: transparent;
+  background-color: var(--bg-color);
   transition: opacity 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid var(--accent-color);
   overflow: hidden;
@@ -188,15 +185,25 @@
 }
 
 .button__text {
+  color: var(--label-border);
   position: relative;
   z-index: 1;
-  transition: z-index 1s ease, color 2s ease;
+  transition: z-index 1s ease;
+  display: inline-flex;
+  mix-blend-mode: difference;
 }
 
 .card__icon-button {
   background-color: transparent;
   transition: border 0.3s linear;
   border: 2px solid transparent;
+  height: 38px;
+  width: 40px;
+  padding: 0;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .like-icon {
@@ -213,6 +220,7 @@
 
 .save_block {
   display: flex;
+  width: 100%;
   justify-content: center;
   margin-block: 49px;
 }
@@ -222,21 +230,16 @@
   display: flex;
   width: 340px;
   height: 55px;
-  align-items: center;
-  font-family: var(--Press-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   color: var(--accent-color);
   line-height: 90%;
   column-gap: 8px;
-  padding-left: 22px;
+  padding: 19px 21px 18px 22px;
 }
 
 .dialog {
   position: fixed;
-  top: calc(50% - 90px/2);
-  width: 359px;
+  margin: auto;
+  width: 355px;
   padding: 30px;
   background-color: var(--bg-color);
   justify-content: center;
@@ -324,7 +327,7 @@ dialog::-webkit-backdrop {
   filter: hue-rotate(90deg);
 }
 
-@media (width <=400px) {
+@media (width <=450px) {
   .page {
     width: 100%;
     margin: 0;
@@ -383,12 +386,14 @@ dialog::-webkit-backdrop {
   .btn_dialog_open {
     width: 306px;
     height: 84px;
-    padding: 15px 10px;
+    padding: 19px 15px;
   }
 
   .btn_dialog_open .button__text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     column-gap: 0px;
     row-gap: 8px;
   }

@@ -1,9 +1,5 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+
+
 :root.theme-light {
     --Inter-font: Inter-Variable;
     --Press-font: PressStart2P;
@@ -18,7 +14,6 @@
     --label-border: white;
     --contour-color: #000000;
 }
-    
 :root.theme-dark {
     --Inter-font: Inter-Variable;
     --Press-font: PressStart2P;
@@ -35,7 +30,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .page {
+:root {
             --Inter-font: Inter-Variable;
             --Press-font: PressStart2P;
             --title-weight: 785;
@@ -49,4 +44,5 @@
             --label-border: #00CC14;
             --contour-color: #00CC14;
     }
-  }
+  } 
+  

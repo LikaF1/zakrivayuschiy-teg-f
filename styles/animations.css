@@ -1,3 +1,4 @@
+/* Прошу прощения вроде тепрь все как надо, запуталась с этими задержками после нескольких ревью */
 .theme-menu__button:hover {
     opacity: 0.6;
 }
@@ -112,12 +113,12 @@
 }
 
 .like-icon:active .core {
-    transition: fill 0.3s linear 0.05s;
+    transition: fill 0.3s linear;
     fill: var(--active-color);
 }
 
 .like-icon:active .main-body {
-    transition: fill 0.3s linear;
+    transition: fill 0.3s linear 0.05s;
     fill: var(--active-color);
 }
 
@@ -127,12 +128,12 @@
 }
 
 .like-icon.is-liked .main-body {
-    transition: fill 0.3s linear;
+    transition: fill 0.3s linear 0.05s;
     fill: var(--active-color);
 }
 
 .like-icon.is-liked .contour {
-    transition: fill 0.3s linear 0.6s;
+    transition: fill 0.3s linear 0.06s;
     fill: var(--active-color);
 }
 
